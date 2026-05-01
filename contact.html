@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Contact</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial;
+            background:#f2f6fb;
+        }
+
+        nav{
+            background:#003366;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:20px;
+            font-size:20px;
+        }
+
+        .container{
+            width:70%;
+            margin:auto;
+            padding:60px;
+        }
+
+        .box{
+            background:white;
+            padding:40px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            color:#003366;
+            font-size:45px;
+        }
+
+        input, textarea{
+            width:100%;
+            padding:15px;
+            margin-top:20px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            font-size:18px;
+        }
+
+        button{
+            background:#003366;
+            color:white;
+            padding:15px 30px;
+            border:none;
+            margin-top:20px;
+            font-size:18px;
+            cursor:pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<nav>
+
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/courses">Courses</a>
+    <a href="/contact">Contact</a>
+
+</nav>
+
+<div class="container">
+
+    <div class="box">
+
+        <h1>Contact Us</h1>
+
+        <form method="POST">
+
+            <input type="text"
+                   name="name"
+                   placeholder="Enter Your Name"
+                   required>
+
+            <input type="email"
+                   name="email"
+                   placeholder="Enter Your Email"
+                   required>
+
+            <input type="text"
+                   name="phone"
+                   placeholder="Enter Phone Number">
+
+            <textarea
+                name="message"
+                rows="7"
+                placeholder="Enter Your Message"></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
